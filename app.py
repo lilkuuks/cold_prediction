@@ -1,7 +1,10 @@
+from doctest import debug
+
 from flask import Flask, request, jsonify, render_template
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-
+bootstrap = Bootstrap(app)
 
 # Rule-based condition prediction function
 def predict_condition(symptoms):
@@ -49,4 +52,4 @@ def api_predict():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
