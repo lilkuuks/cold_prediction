@@ -2,3 +2,7 @@ request.py
 mymodule.py
 test
 workspace.xml
+.idea
+venv
+.venv
+ignore
