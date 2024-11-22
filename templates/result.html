@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Based on the symptoms you provided:</p>
+    <ul>
+        <li>Fever: {{ symptoms['Fever'] }}</li>
+        <li>Cough: {{ symptoms['Cough'] }}</li>
+        <li>Runny Nose: {{ symptoms['Runny_Nose'] }}</li>
+        <li>Sore Throat: {{ symptoms['Sore_Throat'] }}</li>
+        <li>Headache: {{ symptoms['Headache'] }}</li>
+        <li>Fatigue: {{ symptoms['Fatigue'] }}</li>
+    </ul>
+    <h2>Your predicted condition is: {{ condition }}</h2>
+    <h3>Do so by seeing a doctor for immediate attention</h3>
+    <a href="/">Check another condition</a>
+</body>
+</html>
